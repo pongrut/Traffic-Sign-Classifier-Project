@@ -65,7 +65,7 @@ As a first step, I decided to convert the images to grayscale because ...
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+![image preprocessing](./preprocessing.jpg)
 
 As a last step, I normalized the image data because ...
 
@@ -75,7 +75,7 @@ To add more data to the the data set, I used the following techniques because ..
 
 Here is an example of an original image and an augmented image:
 
-![alt text][image3]
+![augmented images](./augmented_image.jpg)
 
 The difference between the original data set and the augmented data set is the following ... 
 
@@ -126,10 +126,8 @@ If a well known architecture was chosen:
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are fifteen German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
 ![Model on New Images](./new_image_prediction.jpg)
 
 The first image might be difficult to classify because ...
