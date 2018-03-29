@@ -54,7 +54,8 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
-![alt text](./43_signs_visualize.jpg)
+![all_signs](./43_signs_visualize.jpg)
+![datasets distribution](./data_distribution.jpg)
 
 ### Design and Test a Model Architecture
 
