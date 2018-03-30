@@ -148,7 +148,7 @@ Here are fifteen German traffic signs that I found on the web:
 
 ![Model on New Images](./new_images.jpg)
 
-The first image might be difficult to classify because ...
+
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -173,7 +173,10 @@ Here are the results of the prediction:
 | 7 Speed limit (100km/h)			| 7 Speed limit (100km/h)      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 12 of the 15 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 94.4%
+
+Three images from the 15 images misclassified. The first image was a Children crossing sign, where the class ID was 28. The high probability that misclassifies caused by the number of data sign classes 28 in the training dataset was tiny compared to other types.
+The second image is speed limit (30km / h), and the third speed limit (100km / h) are both images that were not taken from the front view, which the model has not previously been trained with. For misclassify, this problem may be reduced in the future if a random perspective function is added to the augment_data function.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -181,7 +184,6 @@ The code for making predictions on my final model is located in the 18th cell of
 The prediction result for 15 new images:
 ![new_images_prediction](./new_image_prediction.jpg)
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| Remark|
 |---------------------:|:---------------------------------------------:| :---------------------------------------------| 
