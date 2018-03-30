@@ -52,9 +52,11 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. 
 
 ![all_signs](./43_signs_visualize.jpg)
+
+The following are bar chart showing how the data distributed in each dataset.
 ![datasets distribution](./data_distribution.jpg)
 
 ### Design and Test a Model Architecture
