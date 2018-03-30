@@ -137,7 +137,7 @@ If a well known architecture was chosen:
 
 Here are fifteen German traffic signs that I found on the web:
 
-![Model on New Images](./new_image_prediction.jpg)
+![Model on New Images](./new_images.jpg)
 
 The first image might be difficult to classify because ...
 
