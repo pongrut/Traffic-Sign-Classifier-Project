@@ -65,6 +65,7 @@ The following are bar chart showing how the data distributed in each dataset.
 
 To do image preprocessing I decided to do 2-steps process that will first resize the image to 32x32 pixels to match the input size requirement of the network. Then use the OpenCV library to normalize the numpy array to the range between 0 and 1 because this make image has more balance between dark and light pixel.
 Here is an example of a traffic sign image before and after preprocessing.
+
 ![image preprocessing](./preprocessing.jpg)
 
 To add more data to the the data set, I used the following techniques; random rotation, shear, shift, zoom, and noise adding because makes model robust to recognize variety new sign images.
@@ -106,11 +107,12 @@ My final model consisted of the following layers:
  
 
 
-#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate. 
 
-To train the model, I used an ....
+To train the model, I used the LeNet architecture consists of two sets of convolutional, activation, and pooling layers, followed by a fully-connected layer, activation, another fully-connected, and finally a softmax classifier. 
 
-#### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+The AdamOptimizer is the optimization function for the network. Training has been designed to make the model robust to the new input image, but since the training data only has the sign object, it is just a straight view image with a similar sign size. This lead to overfitting problem to avoid this problem, I set keep drop out at 0.5 to make the model not converge too soon, which will result in setting up epoch at 100 epochs to get 0.953 validation accuracy at 86 epoch.
+
 
 My final model results were:
 * training set accuracy of 0.998
