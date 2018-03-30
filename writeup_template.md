@@ -184,7 +184,7 @@ The prediction result for 15 new images:
 For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| Remark|
-|:---------------------:|:---------------------------------------------:| :---------------------------------------------:| 
+|---------------------:|:---------------------------------------------:| :---------------------------------------------| 
 | .9987         			| 1 Speed limit (30km/h)   									| 			|
 | .9997     				| Priority road 										|			|
 | 1.0000					| Stop											|			|
