@@ -41,7 +41,7 @@ You're reading it! and here is a link to my [project code](https://github.com/ud
 
 #### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
-I use numpy to store all training, testing, validation datasets and labels then uses pandas in retrieving the names of all 43 classes from the csv file, the summary statistics of the traffic
+I use numpy to store all training, testing, validation datasets and their labels then uses pandas in retrieving the names of all 43 classes from the csv file, the summary statistics of the traffic
 signs data set:
 
 * The size of training set is 34,799
