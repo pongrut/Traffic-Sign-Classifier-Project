@@ -138,11 +138,6 @@ To reduce drop-out value is prevent overfitting problem and to meet accuracy req
 
 The LeNet is a convolutional neural network, the Convolutional Neural Network (CNN) architecture is suitable for image classification because the image is indeed 2D width and height which CNN can efficiently do convolution operation by sweeping the relationship between each part of the image and creating great filters . This convolution operation makes it easy for CNN to detect objects in multiple locations, difference lightings, or even just some part of objects in an image. With dropout, some neurons randomly removed and this causes the network not to rely on some of the neuron too much, which may result in overfitting problem.
  
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
  
 
 ### Test a Model on New Images
@@ -182,20 +177,32 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 18th cell of the Ipython notebook.
+The prediction result for 15 new images:
+![new_images_prediction](./new_image_prediction.jpg)
 
 For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| Probability         	|     Prediction	        					| Remark|
+|:---------------------:|:---------------------------------------------:| :---------------------------------------------:| 
+| .9987         			| 1 Speed limit (30km/h)   									| 			|
+| .9997     				| Priority road 										|			|
+| 1.0000					| Stop											|			|
+| .6546	      			| 17 No entry					 				|			|
+| 1.0000				    | 18 General caution      							|			|
+| .7108				    | 23 Slippery road      							|			|
+| .9983				    | Road work      							|			|
+| .9160				    | 31 Wild animals crossing      							| .1653 predicted as 28 Children crossing (True Label)    							|
+| .9749				    | 33 Turn right ahead	      							|
+| .9980				    | 34 Turn left ahead      							|
+| .8762			    | 35 Ahead only      							|
+| .9909				    | 36 Go straight or right      							|
+| .7284				    | 1 Speed limit (30km/h)	      							| .1541 4 Speed limit (70km/h) (True Label) |
+| .9963			    | 5 Speed limit (80km/h)      							| 0.0 13 Yield	(True Label) |
+| .3812			    | Speed limit (100km/h)	      							|  |
 
 
-![new_images_prediction](./new_image_prediction.jpg)
+
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
