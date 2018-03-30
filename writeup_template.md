@@ -88,20 +88,20 @@ My final model consisted of the following layers:
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
 | Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
-| RELU					|												|
+| RELU					|outputs 28x28x6|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
 | Convolution 5x5	    | 1x1 stride, valid padding, outputs 10x10x16 	|
-| RELU					|												|
+| RELU					|10x10x16|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
 | Flatten		| outputs 400       									|
 | Fully connected		| outputs 120	|
-| RELU					|												|
-| Dropout					|												|
+| RELU					|outputs 120|
+| Dropout					|outputs 120|
 | Fully connected		| outputs 84	|
-| RELU					|												|
-| Dropout					|												|
+| RELU					| outputs 84	|
+| Dropout					| outputs 84	|
 | Fully connected		| outputs 43	|									|
-| Softmax				|         									|
+| Softmax				| outputs 43	|
 |						|												|
 |						|												|
  
