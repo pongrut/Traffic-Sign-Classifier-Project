@@ -111,7 +111,8 @@ My final model consisted of the following layers:
 
 To train the model, I used the LeNet architecture consists of two sets of convolutional, activation, and pooling layers, followed by a fully-connected layer, activation, another fully-connected, and finally a softmax classifier. 
 
-The AdamOptimizer is the optimization function for the network. Training has been designed to make the model robust to the new input image, but since the training data only has the sign object, it is just a straight view image with a similar sign size. This lead to overfitting problem to avoid this problem, I set keep drop out at 0.5 to make the model not converge too soon, which will result in setting up epoch at 100 epochs to get 0.953 validation accuracy at 86 epoch.
+The AdamOptimizer is the optimization function for the network. Training has been designed to make the model robust to the new input image, but since the training data only has the sign object, it is just a straight view image with a similar sign size. This lead to overfitting problem to avoid this problem, I set keep drop out at 0.5 to make the model not converge too soon, which will result in setting up epoch at 100 epochs to get 0.953 validation accuracy at 86 epoch with 512 batch size. 
+Moreover, I have performed image augmentation for five methods in every batch before running through the network. Therefore, the batch size increases to 3,072 images per batch.
 
 
 My final model results were:
