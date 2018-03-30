@@ -122,10 +122,22 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
+I chose LeNet architecture because It is a simple convolutional neural network with only 60 thousand parameters. Thus, it will take less computational power for the simple classification problem.
 * What were some problems with the initial architecture?
+
+The original LeNet poorly performed for classifying new images.
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
+I added a dropout layer to 1st and 2nd fully connected layers and also added an image augmentation before sending the input to the network.
 * Which parameters were tuned? How were they adjusted and why?
+
+In the final model, I changed keep drop-out value from 0.75 to 0.50 and epoch from 50 to 100 epoch.
+To reduce drop-out value is prevent overfitting problem and to meet accuracy requirement it needs more epochs to train.
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
+The LeNet is a convolutional neural network, the Convolutional Neural Network (CNN) architecture is suitable for image classification because the image is indeed 2D width and height which CNN can efficiently do convolution operation by sweeping the relationship between each part of the image and creating great filters . This convolution operation makes it easy for CNN to detect objects in multiple locations, difference lightings, or even just some part of objects in an image. With dropout, some neurons randomly removed and this causes the network not to rely on some of the neuron too much, which may result in overfitting problem.
+ 
 
 If a well known architecture was chosen:
 * What architecture was chosen?
