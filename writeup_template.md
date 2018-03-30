@@ -67,11 +67,16 @@ To do image preprocessing I decided to do 2-steps process that will first resize
 Here is an example of a traffic sign image before and after preprocessing.
 ![image preprocessing](./preprocessing.jpg)
 
-To add more data to the the data set, I used the following techniques; random rotation, shear, shift, zoom, and noise adding  because makes model robust to recognize variety new sign images.
+To add more data to the the data set, I used the following techniques; random rotation, shear, shift, zoom, and noise adding because makes model robust to recognize variety new sign images.
 Here is an example of an original image and an augmented image:
 ![augmented images](./augmented_image.jpg)
 
-The difference between the original data set and the augmented data set is the 5 additional images that are in original data set.
+The difference between the original data set and the augmented data set is the following.
+- Random rotation: the original image is ramdomly rolated.
+- Random shear: the original image is randomly spatial sheared.
+- Random shift: the original image is randomly shifted.
+- Random zoom: the original image is randomly zoomed.
+- Random noise adding: the original image is randomly adding noise.
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
