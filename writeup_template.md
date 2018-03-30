@@ -175,7 +175,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 12 of the 15 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of 94.4%
 
-Three images from the 15 images misclassified. The first image was a Children crossing sign, where the class ID was 28. The high probability that misclassifies caused by the number of data sign classes 28 in the training dataset was tiny compared to other types.
+Three images from the fifteen images are misclassified. The first image was a Children crossing sign, where the class ID was 28. The high probability that misclassifies caused by the number of data sign classes 28 in the training dataset was tiny compared to other types.
 The second image is speed limit (30km / h), and the third speed limit (100km / h) are both images that were not taken from the front view, which the model has not previously been trained with. For misclassify, this problem may be reduced in the future if a random perspective function is added to the augment_data function.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
