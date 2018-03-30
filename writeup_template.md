@@ -71,7 +71,7 @@ To add more data to the the data set, I used the following techniques; random ro
 Here is an example of an original image and an augmented image:
 ![augmented images](./augmented_image.jpg)
 
-The difference between the original data set and the augmented data set is the following ... 
+The difference between the original data set and the augmented data set is the 5 additional images that are in original data set.
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
